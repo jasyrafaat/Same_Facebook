@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: rgb(201, 200, 200);
+    height: 4000px;
+
+}
+/* .container{
+    width: 90%;
+    margin: 100px auto;
+} */
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px ;
+    background-color: white;
+    /* علشان ينزل معاك */
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.navbar-left{
+    display: flex;   
+    align-items: center;
+    gap: 20px;
+}
+.navbar-left h2{
+    color: blue;
+}
+.navbar-left .icons{
+    display: flex;   
+    align-items: center;
+    gap: 15px;
+}
+.navbar-left .icons i{
+    font-style: 18px;
+    cursor: pointer;
+}
+.navbar-left .navbar-search{
+    position: relative;
+}
+.navbar-left .navbar-search input{
+    width: 400px;
+    padding: 7px 25px;
+    outline: none;
+}
+.navbar-left .navbar-search i{
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    font-size: 18px;
+}
+.navbar .navbar-right{
+    display: flex;   
+    align-items: center;
+    gap: 15px;
+    margin-right: 40px;
+}
+.navbar .navbar-right i{
+    font-style: 18px;
+    cursor: pointer;
+}
+.navbar .navbar-right h3{
+    color: blue;
+}
+.profile-img{
+    width: 30px;
+    height:30px ;
+    border-radius: 50%;
+}
+/* علشان ياخد قد حجمه بالظبط */
+.home{
+    display: flex;
+    gap: 15px;
+}
+.left-bar{
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    /* علشان يثبت معاك */
+    height: 100vh;
+    position: sticky;
+    top: 0; 
+    overflow: scroll;
+    /* لو فيه position مفيش margin top كدا علطول */
+    top: 70px;
+}
+.left-bar .left-bar-content{
+    padding: 10px 20px;
+}
+.left-bar .left-bar-content div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.left-bar .left-bar-content div i{
+    font-size: 18px;
+}
+.left-bar .left-bar-content div p{
+    font-size: 18px;
+}
+.left-bar .left-bar-content .h p{
+    color: blue;
+    font-weight: bold;
+}
+hr{
+    margin-top: 10px;
+}
+.middle-bar{
+    width: 65%;
+}
+.middle-bar .content-up{
+    margin-top: 20px;
+    
+}
+.middle-bar .stories .story img{
+    width: 180px;
+    height: 240px;
+    /* الصوره اللي واخداها */
+    border-radius: 10px;
+}
+.middle-bar .content-up .stories{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 100px;
+}
+.middle-bar .content-up .stories .story{
+    position: relative;
+}
+.middle-bar .stories .story p{
+    position: absolute;
+    color: white;
+    font-style: 16px;
+    bottom: 20px;
+    left: 10px;
+}
+.middle-bar .content-up .stories .story span{
+    position: absolute;
+    bottom: 50px;
+    left: 15px;
+    background-color: rgb(45, 133, 255);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 7px;
+    cursor: pointer;
+}
+.middle-bar .content-down{
+    margin-top: 60px;
+}
+.middle-bar .content-down .post{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.middle-bar .content-down .post .top-sec{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.middle-bar .content-down .post .top-sec-left{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.middle-bar .content-down .post .top-sec-left p{
+    margin-bottom: 5px;
+    font-style: 18px;
+}
+.middle-sec{
+    margin: 30px 0;
+    font-style: 18px;
+    font-weight: bold;
+}
+.middle-bar .content-down .post .post-img{
+    height: 400px;
+    width: 100%;
+}
+.post-icons{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.post-icons div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.post-icons div i{
+    font-style: 18px;
+}
+.post-icons div p{
+    font-style: 18px;
+    font-weight: bold;
+}
+.right-bar{
+    width: 22%;
+    padding: 20px;
+    height: 100vh;
+    margin-top: 60px;
+    margin-right: 10px;
+    position: sticky;
+    top: 0; 
+    overflow: scroll;
+}
+.right-bar .cards{
+    margin-top: 10px;
+}
+.right-bar .cards .card{
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+}
+.right-bar .cards p{
+    margin-bottom: 5px;
+    opacity: 0.7;
+}
+.right-bar .cards .card .card-parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-bar .cards .card .card-parent .card-parent-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-parent-left{
+    margin-top: 20px;
+}
+.card-parent-left p{
+    margin-top: 15px;
+}
+.card-parent-right{
+    margin-top: 30px;
+}
+.card-parent-right{
+    display: flex;
+    gap: 7px;
+    margin-right: 10px;
+}
+.card-parent-right button{
+    padding: 5px;
+    background-color:red ;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.card-parent-right .blue{
+    background-color: blue;
+    opacity: 0.7;
+}
+.card-parent-left{
+    position: relative;
+}
+.card-parent-left span{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(7, 212, 7);
+    position: absolute;
+    border-radius: 50%;
+    left: 22px;
+    top: 12px;
+}
